@@ -2,22 +2,24 @@
   "name": "mysql2-server",
   "version": "1.0.0",
   "description": "An Express server with MySQL2 for Render deployment",
-  "main": "index.js",
+  "main": "server.js",
   "type": "module",
   "scripts": {
-    "start": "node index.js", 
-    "dev": "nodemon index.js"
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "preinstall": "npm install -g npm@8.19.4"
   },
   "dependencies": {
-    "dotenv": "^16.3.1", 
-    "express": "^4.21.1", 
-    "mysql2": "^3.11.4" 
+    "dotenv": "^16.3.1",
+    "express": "^4.21.1",
+    "mysql2": "^3.11.4"
   },
   "devDependencies": {
-    "nodemon": "^3.0.1" 
+    "nodemon": "^3.0.1"
   },
   "engines": {
-   "node": ">=14.0.0 <18.0.0"
+    "node": "18.x",
+    "npm": "8.x"
   },
   "keywords": [
     "express",
@@ -25,6 +27,6 @@
     "render",
     "nodejs"
   ],
-  "author": "Your Name",
+  "author": "Vivek Mistry",
   "license": "ISC"
 }
