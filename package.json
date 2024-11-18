@@ -1,16 +1,30 @@
 {
   "name": "mysql2-server",
   "version": "1.0.0",
-  "description": "",
+  "description": "An Express server with MySQL2 for Render deployment",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js", 
+    "dev": "nodemon index.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "dependencies": {
-    "express": "^4.21.1",
-    "mysql2": "^3.11.4"
-  }
+    "dotenv": "^16.3.1", 
+    "express": "^4.21.1", 
+    "mysql2": "^3.11.4" 
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1" 
+  },
+  "engines": {
+    "node": ">=16" 
+  },
+  "keywords": [
+    "express",
+    "mysql2",
+    "render",
+    "nodejs"
+  ],
+  "author": "Your Name",
+  "license": "ISC"
 }
