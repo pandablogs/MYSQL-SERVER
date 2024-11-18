@@ -6,9 +6,8 @@
   "type": "module",
   "scripts": {
     "start": "node server.js",
-    "dev": "nodemon server.js",
-    "preinstall": "npm install -g npm@8.19.4"
-  },
+    "preinstall": "npm install -g npm@8.19.4 && npm ci"
+  }
   "dependencies": {
     "dotenv": "^16.3.1",
     "express": "^4.21.1",
